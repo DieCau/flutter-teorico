@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:teoria_0/src/pages/images.dart';
+import 'package:teoria_0/src/pages/pagina_dos.dart';
+import 'package:teoria_0/src/pages/pagina_uno.dart';
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -8,12 +10,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text("Mostrar Imagenes"),
-        ),
-        body: const Images()
-      ),
+      title: "Navigation",
+      initialRoute: "pagina1",
+      routes: 
+        {"pagina1": (BuildContext context) => const PaginaUno(),
+        "pagina2": (BuildContext context) => const PaginaDos()},
     );
   }
 }
