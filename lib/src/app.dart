@@ -1,20 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:teoria_0/src/pages/pagina_dos.dart';
-import 'package:teoria_0/src/pages/pagina_uno.dart';
+import 'package:teoria_0/src/screens/container_screen.dart';
 
+void main() => runApp(const App());
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class App extends StatelessWidget {
+  const App({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Navigation",
-      initialRoute: "pagina1",
-      routes: 
-        {"pagina1": (BuildContext context) => const PaginaUno(),
-        "pagina2": (BuildContext context) => const PaginaDos()},
+      title: 'Container App',
+      home: ContainerScreen()
     );
   }
 }

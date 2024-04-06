@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class PaginaDos extends StatefulWidget {
-  const PaginaDos({super.key});
+class PageTwoScreen extends StatefulWidget {
+  const PageTwoScreen({super.key});
 
   @override
-  State<PaginaDos> createState() => _PaginaDosState();
+  State<PageTwoScreen> createState() => _PageTwoScreenState();
 }
 
-class _PaginaDosState extends State<PaginaDos> {
+class _PageTwoScreenState extends State<PageTwoScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

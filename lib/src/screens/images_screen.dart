@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class Images extends StatelessWidget {
-  const Images({super.key});
+class ImagesScreen extends StatelessWidget {
+  const ImagesScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
